@@ -73,7 +73,7 @@ contract ProfitSharing {
                 partner.transfer(
                     ((address(this).balance * 1000000)* Partners[partner]) / 100000000
                 );
-                emit Send(((address(this).balance * 1000000)* Partners[partner]) / 100000000);
+                emit Send(PartnersByID[index], ((address(this).balance * 1000000)* Partners[partner]) / 100000000);
             }
         }
     }
